@@ -10,8 +10,8 @@ namespace GarageApplication
         public string TruckBed { get; set; }
         public int Weight { get; set; }
 
-        public Truck(string RegNumber, string Color, string Brand, string Type, int NumberOfTires, string TruckBed, int Weight) :
-                base(RegNumber, Color, Brand, Type, NumberOfTires)
+        public Truck(string regNumber, string Color, string Brand, string Type, int NumberOfTires, int NumberOfPassengers, string TruckBed, int Weight) :
+                base(regNumber, Color, Brand, Type, NumberOfTires, NumberOfPassengers)
         {
             this.TruckBed = TruckBed;
             this.Weight = Weight;

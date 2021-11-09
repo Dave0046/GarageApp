@@ -43,9 +43,9 @@ namespace GarageApplication
                         Console.Write("Enter Garage Name : ");
                         string garageName = Console.ReadLine();
                         garage1 = new Garage<Vehicle>(garageName);
-                        Car volvoS90 = new Car("ABC 123", "Red", "Volvo", "Car", 4, 5, false);
-                        Car nevs = new Car("ABD 123", "Silver", "nevs", "Car", 4, 5, false);
-                        MotorCycle yamaha = new MotorCycle("ABC 124", "blue", "yamaha", "MotorCycle", 2, 200, true);
+                        Car volvoS90 = new Car("ABC 123", "Red", "Volvo", "Car", 4, 5, 5, false);
+                        Car nevs = new Car("ABD 123", "Silver", "nevs", "Car", 4, 5, 5 , false);
+                        MotorCycle yamaha = new MotorCycle("ABC 124", "blue", "yamaha", "MotorCycle", 2, 2, 200, true);
                         garage1.AddVehicle(volvoS90);
                         garage1.AddVehicle(nevs);
                         garage1.AddVehicle(yamaha);
@@ -70,12 +70,15 @@ namespace GarageApplication
                                     Console.WriteLine("Not found...");
                                 }
                                 break;
+
                             case "2":
                                 garage1.FindAllWithColor();
                                 break;
                             case "3":
+                                garage1.FindAllWithWheels();
                                 break;
                             case "4":
+                                garage1.FindAllWithPassengers();
                                 break;
                             case "5":
                                 break;

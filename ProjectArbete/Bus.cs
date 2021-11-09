@@ -7,13 +7,11 @@ namespace GarageApplication
 {
     public class Bus : Vehicle
     {
-        public int NumberOfSeats { get; set; }
-        public int NumbearOfTires { get; set; }
-        public Bus(string RegNumber, string Color, string Brand, string Type, int NumberOfTires, int numberOfSeats, bool combi) :
-        base(RegNumber, Color, Brand, Type, NumberOfTires)
+       
+        public Bus(string regNumber, string Color, string Brand, string Type, int NumberOfTires, int NumberOfPassengers,int numberOfSeats, bool combi) :
+        base(regNumber, Color, Brand, Type, NumberOfTires, NumberOfPassengers)
             {
-                NumberOfSeats = numberOfSeats;
-                NumbearOfTires = NumbearOfTires;
+               
             }
     }
 }

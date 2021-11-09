@@ -11,8 +11,8 @@ namespace GarageApplication
         public int Weight { get; set; }
         public bool Chopper { get; set; }
 
-        public MotorCycle(string RegNumber, string Color, string Brand, string Type, int NumberOfTires, int Weight, bool Chopper) :
-                base(RegNumber, Color, Brand, Type, NumberOfTires)
+        public MotorCycle(string RegNumber, string Color, string Brand, string Type, int NumberOfTires, int NumberOfPassengers, int Weight, bool Chopper) :
+                base(RegNumber, Color, Brand, Type, NumberOfTires, NumberOfPassengers)
         {
             this.Weight = Weight;
             this.Chopper = Chopper;

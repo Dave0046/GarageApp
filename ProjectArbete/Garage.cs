@@ -53,7 +53,23 @@ namespace GarageApplication
             }
         }
 
+        public void FindAllWithWheels()
+        {
+            List<int> wheels = listVehicle.Select(u => u.NumberOfTires).Distinct().ToList();
+            foreach (var tire in wheels)
+            {
+                Console.WriteLine(tire);
+            }
+        }
 
+        public void FindAllWithPassengers()
+        {
+            List<int> passengers = listVehicle.Select(u => u.NumberOfPassengers).Distinct().ToList();
+            foreach (var passenger in passengers)
+            {
+                Console.WriteLine(passengers);
+            }
+        }
 
 
 

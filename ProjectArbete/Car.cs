@@ -9,8 +9,8 @@ namespace GarageApplication
     {
         public int NumberOfSeats { get; set; }
         public bool Combi { get; set; }
-        public Car(string RegNumber, string Color, string Brand, string Type, int NumberOfTires, int numberOfSeats, bool combi) :
-    base(RegNumber, Color, Brand, Type, NumberOfTires)
+        public Car(string regNumber, string Color, string Brand, string Type, int NumberOfTires, int NumberOfPassengers, int numberOfSeats, bool combi) :
+    base(regNumber, Color, Brand, Type, NumberOfTires, NumberOfPassengers)
         {
             NumberOfSeats = numberOfSeats;
             Combi = combi;
